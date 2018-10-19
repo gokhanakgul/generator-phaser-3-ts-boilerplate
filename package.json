@@ -1,6 +1,6 @@
 {
   "name": "generator-phaser-3-ts-boilerplate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Helps to generate phaser 3 typescript boilerplate project template",
   "homepage": "",
   "author": {
@@ -33,9 +33,9 @@
     "npm": ">= 4.0.0"
   },
   "dependencies": {
-    "yeoman-generator": "^2.0.1",
-    "chalk": "^2.1.0",
-    "yosay": "^2.0.1"
+    "yeoman-generator": "^3.1.1",
+    "chalk": "^2.4.1",
+    "yosay": "^2.0.2"
   },
   "jest": {
     "testEnvironment": "node"
