@@ -1,6 +1,6 @@
-# Phaser 3 Webpack Project Template
+# <%= projectName %>
 
-A Phaser 3 Project Template
+<%= projectDesc %>
 
 ### Requirements
 

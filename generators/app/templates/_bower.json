@@ -1,0 +1,26 @@
+{
+  "name": "<%= projectName %>",
+  "authors": [
+    "<%= projectAuthor %>  <<%= projectAuthorEmail %>>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "howler": "^2.0.15",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "underscore": "^1.9.1",
+    "webfontloader": "^1.6.28",
+    "phaser": "^3.15.1"
+  }
+}

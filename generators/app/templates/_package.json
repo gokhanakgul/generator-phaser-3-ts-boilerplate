@@ -1,0 +1,33 @@
+{
+  "name": "<%= projectName %>",
+  "version": "0.0.0",
+  "description": "<%= projectDesc %>",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "npm run build && webpack-dev-server --port=8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<user>/<%= projectName %>.git"
+  },
+  "author": "<%= projectAuthor %><<%= projectAuthorEmail %>>",
+  "license": "",
+  "licenseUrl": "",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@webpack-cli/init": "^0.1.2",
+    "expose-loader": "0.7.5",
+    "ts-loader": "4.4.2",
+    "typescript": "3.1.3",
+    "webpack": "4.20.2",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "3.1.9"
+  },
+  "dependencies": {
+    "phaser": "^3.15.1"
+  }
+}
