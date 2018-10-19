@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Gökhan Akgül",
+      "authorEmail": "gokhan.akgul@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
