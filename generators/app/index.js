@@ -10,6 +10,12 @@ module.exports = class extends Generator {
       yosay(`Welcome to the good ${chalk.red('generator-phaser-3-ts-boilerplate')} generator!`)
     );
 
+
+    const prompts = [
+
+    ];
+
+/*
     const prompts = [
       {
         type: 'confirm',
@@ -18,7 +24,7 @@ module.exports = class extends Generator {
         default: true
       }
     ];
-
+*/
     return this.prompt(prompts).then(props => {
       // To access props later use this.props.someAnswer;
       this.props = props;

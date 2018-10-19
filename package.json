@@ -1,6 +1,6 @@
 {
   "name": "generator-phaser-3-ts-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Helps to generate phaser 3 typescript boilerplate project template",
   "homepage": "",
   "author": {
