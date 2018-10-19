@@ -1,8 +1,8 @@
 'use strict';
-const Generator = require('yeoman-generator');
+const path = require('path');
 const chalk = require('chalk');
 const yosay = require('yosay');
-const path = require('path');
+const Generator = require('yeoman-generator');
 const foldername = path.basename(process.cwd());
 
 module.exports = class extends Generator {
