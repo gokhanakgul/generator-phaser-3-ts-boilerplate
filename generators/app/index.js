@@ -2,6 +2,7 @@
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
+const path = require('path');
 const foldername = path.basename(process.cwd());
 
 module.exports = class extends Generator {
