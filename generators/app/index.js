@@ -1,20 +1,24 @@
 'use strict';
 
+const Generator = require('yeoman-generator');
+const yosay = require('yosay');
 const path = require('path');
 const chalk = require('chalk');
-const yosay = require('yosay');
-const Generator = require('yeoman-generator');
 const foldername = path.basename(process.cwd());
 
 module.exports = class extends Generator {
+
+
+  initializing() {
+    this.props = {};
+  }
+
   prompting() {
-    // Have Yeoman greet the user.
     this.log(
       yosay(
         `Welcome to the good ${chalk.red('generator-phaser-3-ts-boilerplate')} generator!`
       )
     );
-
     return this.prompt([
       {
         type: 'input',
@@ -46,11 +50,11 @@ module.exports = class extends Generator {
         : '';
     });
   }
-
   configuring() {
     this.config.set('projectName', this.projectName);
     this.config.set('projectDesc', this.projectDesc);
-    this.config.set('projectLicense', this.projectLicense);
+    this.config.set('projectAuthor', this.projectAuthor);
+    this.config.set('projectAuthorEmail', this.projectAuthorEmail);
   }
 
   writing() {
@@ -58,34 +62,24 @@ module.exports = class extends Generator {
 
     this.fs.copy(this.templatePath('src'), this.destinationPath('src'), this);
 
-    this.fs.copyTpl(this.templatePath('_bower.json'), this.destinationPath('bower.json'));
+    this.fs.copyTpl(this.templatePath('_bower.json'), this.destinationPath('bower.json'),this);
 
-    this.fs.copyTpl(this.templatePath('_index.html'), this.destinationPath('index.html'));
+    this.fs.copyTpl(this.templatePath('_index.html'), this.destinationPath('index.html'),this);
 
-    this.fs.copyTpl(
-      this.templatePath('_package.json'),
-      this.destinationPath('package.json')
-    );
+    this.fs.copyTpl(this.templatePath('_package.json'), this.destinationPath('package.json'),this);
 
-    this.fs.copyTpl(this.templatePath('_README.md'), this.destinationPath('README.md'));
+    this.fs.copyTpl(this.templatePath('_README.md'), this.destinationPath('README.md'),this);
 
-    this.fs.copy(
-      this.templatePath('tsconfig.json'),
-      this.destinationPath('tsconfig.json')
-    );
+    this.fs.copy(this.templatePath('tsconfig.json'), this.destinationPath('tsconfig.json'),this);
 
-    this.fs.copy(
-      this.templatePath('webpack.config.js'),
-      this.destinationPath('webpack.config.js')
-    );
+    this.fs.copy(this.templatePath('webpack.config.js'), this.destinationPath('webpack.config.js'),this);
 
-    this.fs.copy(
-      this.templatePath('.gitignore'),
-      this.destinationPath('.gitignore')
-    );
+    this.fs.copy(this.templatePath('.gitignore'), this.destinationPath('.gitignore'),this);
   }
 
   install() {
     this.installDependencies();
   }
+
 };
+
