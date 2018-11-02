@@ -59,19 +59,29 @@ module.exports = class extends Generator {
     this.fs.copy(this.templatePath('src'), this.destinationPath('src'), this);
 
     this.fs.copyTpl(this.templatePath('_bower.json'), this.destinationPath('bower.json'));
+
     this.fs.copyTpl(this.templatePath('_index.html'), this.destinationPath('index.html'));
+
     this.fs.copyTpl(
       this.templatePath('_package.json'),
       this.destinationPath('package.json')
     );
+
     this.fs.copyTpl(this.templatePath('_README.md'), this.destinationPath('README.md'));
+
     this.fs.copy(
       this.templatePath('tsconfig.json'),
       this.destinationPath('tsconfig.json')
     );
+
     this.fs.copy(
       this.templatePath('webpack.config.js'),
       this.destinationPath('webpack.config.js')
+    );
+
+    this.fs.copy(
+      this.templatePath('.gitignore'),
+      this.destinationPath('.gitignore')
     );
   }
 

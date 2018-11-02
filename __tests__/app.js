@@ -11,6 +11,6 @@ describe('generator-phaser-3-ts-boilerplate:app', () => {
   });
 
   it('creates files', () => {
-    assert.file(['dummyfile.txt']);
+    assert.file(['.gitignore']);
   });
 });
