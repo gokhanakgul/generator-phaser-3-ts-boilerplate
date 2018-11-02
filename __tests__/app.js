@@ -5,9 +5,12 @@ const helpers = require('yeoman-test');
 
 describe('generator-phaser-3-ts-boilerplate:app', () => {
   beforeAll(() => {
-    return helpers
-      .run(path.join(__dirname, '../generators/app'))
-      .withPrompts({ someAnswer: true });
+    return helpers.run(path.join(__dirname, '../generators/app')).withPrompts({
+      projectName: 'test project',
+      projectDesc: 'Test project description',
+      projectAuthor: 'gokhan',
+      projectAuthorEmail: 'test@test.com'
+    });
   });
 
   it('creates files', () => {
