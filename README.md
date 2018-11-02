@@ -1,5 +1,5 @@
 # generator-phaser-3-ts-boilerplate [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Helps to generate phaser 3 typescript boilerplate project template
+> Helps to generate phaser 3 typescript webpack boilerplate project template.
 
 ## Installation
 
