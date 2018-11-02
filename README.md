@@ -1,4 +1,7 @@
-# generator-phaser-3-ts-boilerplate [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-phaser-3-ts-boilerplate [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] 
+
+<!---[![Coverage percentage][coveralls-image]][coveralls-url]--->
+
 > Helps to generate phaser 3 typescript webpack boilerplate project template.
 
 ## Installation
@@ -34,5 +37,8 @@ unlicense © [Gökhan Akgül]()
 [travis-url]: https://travis-ci.org/gokhanakgul/generator-phaser-3-ts-boilerplate
 [daviddm-image]: https://david-dm.org/gokhanakgul/generator-phaser-3-ts-boilerplate.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/gokhanakgul/generator-phaser-3-ts-boilerplate
+
+<!--- 
 [coveralls-image]: https://coveralls.io/repos/gokhanakgul/generator-phaser-3-ts-boilerplate/badge.svg
 [coveralls-url]: https://coveralls.io/r/gokhanakgul/generator-phaser-3-ts-boilerplate
+---> 
